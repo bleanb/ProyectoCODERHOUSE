@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Consultorio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+
+<body class="body-registrarte">
+    <img class="fondo-textura2" src="../assets/img/textura.png" alt="textura">
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                          Seccion Header                                                 -->
+    <!--_________________________________________________________________________________________________________-->
+    <header class="header-registrarte">
+        <div class="barra-navegacion-left">
+            <div class="brand">
+                <a class="header-brand" href="../index.html#inicio-home"><img id="brand-imagen"
+                        src="../assets/img/brand.png" alt="Imagen de la Marca (Logo)" /></a>
+            </div>
+        </div>
+        <div class="barra-navegacion-medio">
+            <ul class="barra-navegacion-ul">
+                <li><a class="header" href="../index.html#inicio">INICIO</a></li>
+                <li><a class="header" href="../iniciarsession.html">OPINIONES</a></li>
+                <li><a class="header" href="../iniciarsession.html">TURNOS</a></li>
+                <li><a class="header" href="#contactos">CONTACTO</a></li>
+                <li><a class="header" href="../index.html#preguntas">PREGUNTAS</a></li>
+            </ul>
+        </div>
+        <div class="barra-navegacion-rigth">
+            <a href="../index.html"><img class="back-home" src="../assets/img/Icons/arrow_left_square_fill.png"
+                    alt="Icono para ir para atras" /></a>
+        </div>
+    </header>
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                       Formulario de Registro                                            -->
+    <!--_________________________________________________________________________________________________________-->
+    <section class="seccion-registrarte">
+        <div class="contenedor-registrarte">
+            <h1 class="h1-registrate">REGISTRARTE</h1>
+            <img class="subrallado-registrarte" src="../assets/img/subrallado.png" alt="subrallado">
+            <form action="" method="post">
+                <div class="contenedor-form-registrarte">
+                    <div class="form-izquierdo-registrate">
+                        <label id="label-mail" for="Mail">Mail</label>
+                        <div class="separador-registrarte"></div>
+                        <input class="input-form-registrate input-form-mail" id="input-form-mail" type="email"
+                            name="mail" placeholder="pepito@gmail.com" required>
+                        <div class="espacio-registro"></div>
+                        <label id="label-nombre" for="Nombre">Nombre</label>
+                        <div class="separador-registrarte"></div>
+                        <input class="input-form-registrate input-form-nombre" id="input-form-nombre" type="text"
+                            name="mail" placeholder="Pepito" required>
+                        <div class="espacio-registro"></div>
+                        <label id="label-apellido" for="Apellido">Apellido</label>
+                        <div class="separador-registrarte"></div>
+                        <input class="input-form-registrate input-form-apellido" id="input-form-apellido" type="text"
+                            name="mail" placeholder="Fernandez" required>
+                        <div class="espacio-registro"></div>
+                        <label id="label-nacimiento" for="Fecha de nacimiento">Fecha de
+                            nacimiento</label>
+                        <div class="separador-registrarte"></div>
+                        <input class="input-form-registrate input-form-nacimiento" id="input-form-nacimiento"
+                            type="date" name="mail" placeholder="22/01/1997" required>
+                    </div>
+                    <div class="form-derecho-registrate">
+                        <label id="label-genero" for="genero">Género</label>
+                        <div class="separador-registrarte"></div>
+                        <select class="input-form-registrate" id="genero" name="genero" required>
+                            <option value="selecciona" disabled>Selecciona una opción</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="separador-registrarte2"></div>
+                        <label id="label-dni" for="dni">DNI</label>
+                        <div class="separador-registrarte"></div>
+                        <input class="input-form-registrate input-form-dni" id="input-form-dni" type="number" name="dni"
+                            placeholder="30.457.555" required>
+                        <div class="separador-registrarte2"></div>
+                        <label id="label-password1" for="password" class="contraseña">Contraseña</label>
+                        <div class="separador-registrarte"></div>
+                        <div class="password-input">
+                            <input class="password-content" type="password" id="password1" name="password1"
+                                placeholder="**********" required>
+                            <img src="../assets/img/icons/eye_fill.png" class="toggle-password" data-target="password1"
+                                alt="Mostrar contraseña">
+                        </div>
+                        <div id="charLimitWarning" class="char-limit-warning" style="display: none;">
+                            Solo puedes ingresar hasta 18 caracteres.
+                        </div>
+                        <div id="charLimitWarning3" class="char-limit-warning3" style="display: none;">
+                            La contraseña debe tener mas de 7 caracteres.
+                        </div>
+                        <div class="separador-registrarte"></div>
+                        <label id="label-password2" for="password" class="repetir-contraseña">Repetir contraseña</label>
+                        <div class="separador-registrarte"></div>
+                        <div class="password-input">
+                            <input class="password-content" type="password" id="password2" name="password2"
+                                placeholder="**********" required>
+                            <img src="../assets/img/icons/eye_fill.png" class="toggle-password" data-target="password2"
+                                alt="Mostrar contraseña">
+                        </div>
+                        <div id="charLimitWarning2" class="char-limit-warning2" style="display: none;">
+                            Solo puedes ingresar hasta 18 caracteres.
+                        </div>
+                        <div id="charLimitWarning4" class="char-limit-warning4" style="display: none;">
+                            La contraseña debe tener mas de 7 caracteres.
+                        </div>
+                        <div class="passwordMismatchWarning" id="passwordMismatchWarning" style="display: none; ">
+                            Las contraseñas no coinciden.
+                        </div>
+                    </div>
+                    <input id="botton-enviar-form-registrate" type="submit" value="Enviar" disabled>
+                </div>
+            </form>
+            <img class="fondo-imagen-mujer-iniciar-registrate" src="../assets/img/fondo.png" alt="fondo">
+        </div>
+    </section>
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                           Seccion Footer                                                -->
+    <!--_________________________________________________________________________________________________________-->
+    <footer class="footer-registrate" id="contactos">
+        <div class="contenedor-footer">
+            <div class="footer-izquierdo">
+                <a class="footer-brand" href="#inicio-home"><img id="brand-imagen-footer" src="../assets/img/brand.png"
+                        alt="Imagen de la Marca (Logo)" /></a>
+            </div>
+            <div class="footer-derecho">
+                <div class="whatsapp"><a href="#"><img src="../assets/img/icons/redes/whatsapp.png"
+                            alt="logo whatsapp"></a>
+                    <a class="link-redes" href="#">
+                        <h4>whatsapp: +54 1134104546</h4>
+                    </a>
+                </div>
+                <div class="facebook"><a href="#"><img src="../assets/img/icons/redes/facebook.png"
+                            alt="logo facebook"></a>
+                    <a class="link-redes" href="#">
+                        <h4>Consultorio Santa Maria</h4>
+                    </a>
+                </div>
+                <div class="instagram"><a href="#"><img src="../assets/img/icons/redes/instagram.png"
+                            alt="logo instagram"></a>
+                    <a class="link-redes" href="#">
+                        <h4>@consultoriosantamaria</h4>
+                    </a>
+                </div>
+                <div class="telefono"><a href="#"><img src="../assets/img/icons/redes/phone.png" alt="logo telefono"></a>
+                    <a class="link-redes" href="#">
+                        <h4>Tel: 45623442</h4>
+                    </a>
+                </div>
+                <div class="mail"><a href="#"><img src="../assets/img/icons/redes/mail.png" alt="logo mail"></a>
+                    <a class="link-redes" href="#">
+                        <h4>contacto@consul
+                            toriosantamaria
+                            .com</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--_________________________________________________________________________________________________________-->
+    <script src="../js/script-password.js"></script>
+
+</body>
+
+</html>

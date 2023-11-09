@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Consultorio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+
+<body class="body-iniciarsession">
+    <img class="fondo-textura" src="../assets/img/textura.png" alt="textura">
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                          Seccion Cartel Warning                                         -->
+    <!--_________________________________________________________________________________________________________-->
+
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                          Seccion Header                                                 -->
+    <!--_________________________________________________________________________________________________________-->
+    <header class="header-iniciarsession">
+        <div class="barra-navegacion-left">
+            <div class="brand">
+                <a class="header-brand" href="../index.html#inicio-home"><img id="brand-imagen"
+                        src="../assets/img/brand.png" alt="Imagen de la Marca (Logo)" /></a>
+            </div>
+        </div>
+        <div class="barra-navegacion-medio">
+            <ul class="barra-navegacion-ul">
+                <li><a class="header" href="../index.html#inicio">INICIO</a></li>
+                <li><a class="header" href="../iniciarsession.html">OPINIONES</a></li>
+                <li><a class="header" href="../iniciarsession.html">TURNOS</a></li>
+                <li><a class="header" href="#contactos">CONTACTO</a></li>
+                <li><a class="header" href="../index.html#preguntas">PREGUNTAS</a></li>
+            </ul>
+        </div>
+        <div class="barra-navegacion-rigth">
+            <a href="../index.html"><img class="back-home" src="../assets/img/Icons/arrow_left_square_fill.png"
+                    alt="Icono para ir para atras" /></a>
+        </div>
+    </header>
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                         Formulario de inicio de Sesion                                  -->
+    <!--_________________________________________________________________________________________________________-->
+    <div class="contenedor-form-iniciosession">
+        <h1 class="h1-inisiar-session">INICIAR SESSIÓN</h1>
+        <img class="subrallado-iniciarsession" src="../assets/img/subrallado.png" alt="subrallado">
+        <div class="espacio-inicio-session"></div>
+        <form class="form-iniciarsession" action="" method="post">
+            <label id="label-input-form-mail-inicio-session" for="input-form-mail">Mail</label>
+            <div class="espacio"></div>
+            <input class="input-form-inicio-session1" id="input-form-mail" type="text" name="mail"
+                placeholder="pepito@gmail.com">
+            <div class="espacio"></div>
+            <label class="password-label" for="password">Contraseña</label>
+            <div class="password-input">
+                <input type="password" id="password" name="password" placeholder="************">
+                <img src="../assets/img/icons/eye_fill.png" class="toggle-password" id="togglePassword"
+                    alt="Mostrar contraseña">
+            </div>
+            <div id="charLimitWarning1" class="char-limit-warning" style="display: none;">
+                La contraseña solo puedes tener hasta 18 caracteres.
+            </div>
+            <div id="charLimitWarning2" class="char-limit-warning" style="display: none;">
+                La contraseña debe tener mas de 7 caracteres.
+            </div>
+            <!--<input id="botton-enviar-form-inicio-session" type="submit" value="Enviar">-->
+            <a class="boton-iniciarssesion" href="../miperfil.html">Enviar</a>
+            
+        </form>
+        <img class="fondo-imagen-mujer-iniciar-session" src="../assets/img/fondo.png" alt="fondo">
+    </div>
+
+    <!--_________________________________________________________________________________________________________-->
+    <!--                                           Seccion Footer                                                -->
+    <!--_________________________________________________________________________________________________________-->
+    <footer class="footer-iniciarsession" id="contactos">
+        <div class="contenedor-footer">
+            <div class="footer-izquierdo">
+                <a class="footer-brand" href="#inicio-home"><img id="brand-imagen-footer" src="../assets/img/brand.png"
+                        alt="Imagen de la Marca (Logo)" /></a>
+            </div>
+            <div class="footer-derecho">
+                <div class="whatsapp"><a href="#"><img src="../assets/img/icons/redes/whatsapp.png"
+                            alt="logo whatsapp"></a>
+                    <a class="link-redes" href="#">
+                        <h4>whatsapp: +54 1134104546</h4>
+                    </a>
+                </div>
+                <div class="facebook"><a href="#"><img src="../assets/img/icons/redes/facebook.png"
+                            alt="logo facebook"></a>
+                    <a class="link-redes" href="#">
+                        <h4>Consultorio Santa Maria</h4>
+                    </a>
+                </div>
+                <div class="instagram"><a href="#"><img src="../assets/img/icons/redes/instagram.png"
+                            alt="logo instagram"></a>
+                    <a class="link-redes" href="#">
+                        <h4>@consultoriosantamaria</h4>
+                    </a>
+                </div>
+                <div class="telefono"><a href="#"><img src="../assets/img/icons/redes/phone.png" alt="logo telefono"></a>
+                    <a class="link-redes" href="#">
+                        <h4>Tel: 45623442</h4>
+                    </a>
+                </div>
+                <div class="mail"><a href="#"><img src="../assets/img/icons/redes/mail.png" alt="logo mail"></a>
+                    <a class="link-redes" href="#">
+                        <h4>contacto@consul
+                            toriosantamaria
+                            .com</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--_________________________________________________________________________________________________________-->
+    <script src="../js/script-password-iniciarsession.js"></script>
+</body>
+
+</html>

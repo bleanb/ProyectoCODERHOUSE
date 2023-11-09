@@ -1,0 +1,2116 @@
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/*                      ESTILOS GLOBALES                                */
+/*----------------------------------------------------------------------*/
+@font-face {
+    font-family: 'PoiretOne';
+    src: url('/assets/font/PoiretOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('/assets/font/Exo2-VariableFont_wght.ttf') format('truetype');
+}
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/*                           ESTILOS PARA BODY                          */
+
+.body-index,
+.body-registrarte,
+.body-iniciarsession,
+.body-turnos,
+.body-opiniones {
+    background-color: #dadaf4;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                     ESTILOS PARA EL HEADER                                        */
+/*---------------------------------------------------------------------------------------------------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #f4dada;
+    box-shadow: 0 15px 25px -22px black;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.back-home {
+    width: 40px;
+    height: 40px;
+    margin-left: 11em;
+}
+
+.boton {
+    border-radius: 7em;
+    background-color: #dadaf4;
+    border-color: #232323;
+    font-family: 'PoiretOne';
+    font-size: 1em;
+    font-weight: bold;
+    width: 7em;
+    height: 3em;
+    box-shadow: 0 5px 25px -22px black;
+    margin: 0.5em;
+}
+
+#brand-imagen {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.brand {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.barra-navegacion-medio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 100px;
+}
+
+.barra-navegacion-rigth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 100px;
+    margin-right: 0px;
+}
+
+ul.barra-navegacion-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+a.header {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    font-family: 'PoiretOne';
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+li {
+    list-style: none;
+    margin: 25px;
+    padding: 0;
+}
+
+a.header:hover {
+    color: #3d4d96;
+    background-image: linear-gradient(to bottom, #3d4d96, #3d4d96);
+    background-repeat: no-repeat;
+    background-size: 50% 2px;
+    background-position: center bottom;
+    position: relative;
+}
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                        ESTILOS FOOTER                                             */
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.footer-registrate,
+.footer-iniciarsession,
+.footer-turnos,
+.footer-perfil {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    background-image: url('/assets/img/footer-no-index2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    left: 0;
+    font-family: 'PoiretOne';
+    font-size: 26px !important;
+    z-index: 1;
+}
+
+
+.footer-registrate {
+    margin-top: 100px;
+}
+
+
+.footer-index {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    background-image: url('/assets/img/footer-index.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'PoiretOne';
+    font-size: 26px !important;
+    position: absolute;
+
+}
+
+.footer-brand {
+    width: 200px;
+    height: 200px;
+}
+
+#brand-imagen-footer {
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor-footer {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.footer-derecho {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-top: 100px;
+    margin-left: 25px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-izquierdo {
+    margin-top: 100px;
+}
+
+.whatsapp {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp img {
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.facebook img {
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+
+.instagram img {
+    margin-left: 115px;
+    margin-bottom: 15px;
+}
+
+.telefono img {
+    margin-bottom: 15px;
+    margin-left: 55px;
+}
+
+.telefono h4 {
+    width: 200px;
+}
+
+.mail img {
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+.mail h4 {
+    width: 200px;
+    /* Define el ancho máximo */
+    margin: 0;
+    /* Elimina los márgenes predeterminados que pueden estar causando el problema */
+    /* Evita el ajuste de línea, forzando el texto a permanecer en una sola línea */
+
+
+}
+
+.facebook {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.instagram {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.telefono {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mail {
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-redes {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+h4 {
+    width: 150px;
+    margin: 0;
+    font-weight: bold !important;
+    font-size: 26px !important;
+}
+
+.separador-footer {
+    height: 15px;
+}
+
+
+/*? footer reset */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: inherit;
+}
+
+.logo-footer {
+    width: 30%;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    margin-right: 150px;
+}
+
+.footer-logo-palabra {
+    display: flex;
+
+}
+
+.footer-logo-palabra h3 {
+    font-family: 'Ubuntu';
+}
+
+.footer-logo h2 {
+    font-size: 20px;
+    color: var(--color-principal-logo);
+    font-family: 'Horizon';
+}
+
+.footer-logo h3 {
+    font-size: 10px;
+    margin-top: 5px !important;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    background: #f4dada ;
+    flex-direction: column;
+    padding: 16px;
+    width: 100%;
+    font-family: 'Retro2';
+}
+
+
+/*? footer columns */
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    flex: 2 0 140px;
+    width: 100%;
+    gap: 16px;
+    padding: 24px 8px 16px 8px;
+    margin: 0 auto;
+    border-top: 1px solid var(--text-gray);
+}
+
+.footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-columns ul a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-columns ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-columns ul li {
+    margin-bottom: 16px;
+}
+
+.footer-columns h3 {
+    color: var(--footer-heading-gray);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.125rem;
+}
+
+.footer-centering {
+    margin: 0 auto;
+}
+
+.footer-columns>section {
+    min-width: 150px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-width: 180px;
+    gap: 8px;
+}
+
+.footer-logo>svg {
+    stroke: var(--text-color);
+    stroke-width: 8px;
+    width: 50px;
+}
+
+/*? Footer bottom */
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid var(--text-gray);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    padding: 16px 0px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.footer-bottom>small {
+    font-size: 15px;
+    font-family: 'Ubuntu';
+}
+
+.footer-headline>h2 {
+    margin: 0px;
+}
+
+.footer-headline>p {
+    margin: 12px 0px;
+}
+
+/*? socials */
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    position: absolute;
+    right: 50px;
+}
+
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.social-links img:hover {
+    transform: scale(1.5);
+}
+
+.Product h3 {
+    color: var(--color-principal-logo);
+    font-weight: 1;
+    font-size: 25px;
+}
+
+.Product ul li a {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+
+}
+
+.Resources h3 {
+    color: var(--color-principal-logo);
+    font-weight: 1;
+    font-size: 25px;
+}
+
+.Resources ul li a {
+    font-size: 15px;
+    font-family: 'Ubuntu';
+}
+
+.Company h3 {
+    color: var(--color-principal-logo);
+    font-weight: 1;
+    font-size: 25px;
+}
+
+.Company ul li a {
+    font-size: 15px;
+    font-family: 'Ubuntu';
+}
+
+.Legal h3 {
+    color: var(--color-principal-logo);
+    font-weight: 1;
+    font-size: 25px;
+}
+
+.Legal ul li a {
+    font-size: 15px;
+    font-family: 'Ubuntu';
+}
+
+/*? mobile */
+
+@media (max-width: 800px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px 8px 32px 8px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .footer-bottom small{
+        margin-top: -50px;
+    }
+
+}
+
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                      ESTILOS INDEX                                                */
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+
+
+/*ESTILOS SECCION INICIO*/
+/*---------------------------------------------------------------------------------------------------*/
+
+.inicio {
+    padding-top: 200px;
+    /*compenza el header*/
+    width: 100%;
+    height: 900px;
+}
+
+.inicio p {
+    font-family: 'Exo2';
+    font-size: 1em;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+    padding: 1em;
+    color: black;
+    margin-top: 10px;
+}
+
+
+
+.imagen-mujer-container {
+    margin-top: 100px;
+}
+
+
+.fondo-imagen-mujer {
+    position: absolute;
+    width: 100%;
+    opacity: 50%;
+    height: 2000px;
+    margin-top: -1700px;
+}
+
+.contenedor-parrafo {
+    width: 540px;
+    height: 330px;
+    margin-left: 30px;
+    padding: 1em;
+    position: absolute;
+
+}
+
+.fondo-titulo {
+    position: absolute;
+    margin-top: -125px;
+    width: 100%;
+    height: 150px;
+    margin-left: -300px;
+    opacity: 50%;
+}
+
+.fondo-parrafo {
+    margin-top: -550px;
+    position: absolute;
+    width: 820px;
+    height: 750px;
+    padding: 0;
+    margin-left: -160px;
+    opacity: 80%;
+}
+
+
+
+
+.inicio h1 {
+    font-family: 'PoiretOne';
+    font-size: 5em;
+    margin-left: 30px;
+    width: 100%;
+    position: absolute;
+    margin-top: -100px;
+
+}
+
+.imagen-mujer {
+    height: 500px;
+    margin-top: -200px;
+}
+
+.separador {
+    width: 100%;
+    margin-top: -70px;
+}
+
+.imagenes-obras-sociales {
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.carousel-obras-sociales {
+    display: flex;
+    animation: desplazamiento 10s linear infinite;
+    -webkit-animation: desplazamiento 10s linear infinite;
+    width: 100%;
+}
+
+.carouselImg img {
+    width: 200px;
+    height: 100px;
+}
+
+@keyframes desplazamiento {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(-600px);
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*ESTILOS SECCION UBICACION*/
+
+#imagen-location {
+    opacity: 0.05;
+    position: absolute;
+    rotate: 30deg;
+    width: 500px;
+    height: 500px;
+    margin-left: 600px;
+}
+
+.ubicacion.texto-ubicacion {
+    margin-right: 1000px;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 800px;
+    background-color: #dae4f4;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.ubicacion h2 {
+    font-family: 'PoiretOne';
+    font-size: 40px;
+    font-weight: bold;
+    width: auto;
+    width: 500px;
+}
+
+.ubicacion p {
+    font-family: 'Exo2';
+    font-size: 18px;
+    width: 500px;
+    text-align: left;
+}
+
+#mapa {
+    border-radius: 20px;
+    box-shadow: -5px 5px 22px -10px black;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*ESTILOS SECCION OPINIONES*/
+
+.imagen-separador-opiniones1 {
+    position: absolute;
+    margin-top: -140px;
+}
+
+.barra-separadora1 {
+    position: absolute;
+    height: 3px;
+    width: 700px;
+    background-image: linear-gradient(to right, black, transparent);
+    margin-top: 20px;
+    left: 0;
+}
+
+.barra-separadora2 {
+    position: absolute;
+    height: 3px;
+    width: 500px;
+    background-image: linear-gradient(to left, black, transparent);
+    right: 0;
+    margin-top: -50px;
+}
+
+.imagen-fondo-comentario2 {
+    position: absolute;
+    opacity: 10%;
+    margin-top: 550px;
+    rotate: -30deg;
+    width: 260px;
+    margin-left: 320px;
+}
+
+
+.imagen-fondo-comentario4 {
+    position: absolute;
+    opacity: 10%;
+    margin-left: 720px;
+    margin-top: 40px;
+    rotate: 30deg;
+    width: 280px;
+}
+
+.opiniones-index {
+    width: 100%;
+    height: 800px;
+    background: #dadaf4;
+}
+
+.opiniones-index h2 {
+
+    font-family: 'PoiretOne';
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.opiniones-contenedor {
+    background: #dadaf4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    width: 100%;
+    height: 500px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-navBtn {
+    color: #f0f4db;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #e8ecd3;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 30px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-navBtn-index2 {
+    color: #f0f4db !important;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn-index2:hover {
+    color: #e8ecd3;
+}
+
+.swiper-navBtn-index2::before,
+.swiper-navBtn-index2::after {
+    font-size: 30px !important;
+}
+
+.swiper-button-next-index2 {
+    right: 0;
+}
+
+.swiper-button-prev-index2 {
+    left: 0;
+}
+
+.slide-container {
+    max-width: 1300px;
+    width: 100%;
+    background-color: transparent;
+    padding: 40px 0;
+}
+
+.card-opiniones {
+    border-radius: 25px;
+    background: whitesmoke;
+    max-width: 500px;
+    min-width: 320px;
+}
+
+
+
+.imagen-content,
+.card-content {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content {
+    row-gap: 5px;
+}
+
+.imagen-content {
+    position: relative;
+    row-gap: 5px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #f0f4db;
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    background: #f0f4db;
+    right: 0;
+    bottom: -40px;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: whitesmoke;
+}
+
+.slide-content {
+    margin: 0 50px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.card-estrellas {
+    background: #dae4f4;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.card-imagen {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.card-imagen .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #dae4f4;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.opinion-user {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*ESTILOS SECCION PREGUNTAS*/
+.contenedor-preguntar h3 {
+    font-family: 'PoiretOne';
+    font-size: 50px !important;
+    font-weight: bold;
+}
+
+.contenedor-acordion {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'PoiretOne';
+    font-size: 24px;
+    margin-top: 100px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.acordeon {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.label-for-section1 {
+    background-color: #f0f4db;
+    color: black;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin-bottom: 1px;
+    border-radius: 50px;
+}
+
+/* Estilos para los íconos de flecha que indica el desplazamiento del acordeon*/
+/*----------------------------------------------------------------------------*/
+.flechita {
+    width: 5%;
+    margin-left: 100px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flechita2 {
+    width: 5%;
+    margin-left: 222px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flechita3 {
+    width: 5%;
+    margin-left: 226px;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Gira el ícono de flecha cuando el checkbox está marcado */
+input[type="checkbox"]:checked+label .flechita {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked+label .flechita2 {
+    transform: rotate(180deg);
+}
+
+input[type="checkbox"]:checked+label .flechita3 {
+    transform: rotate(180deg);
+}
+
+/*---------------------------------------------------------------------------*/
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    width: 80%;
+    margin-left: 20px;
+
+}
+
+#content {
+    max-height: 2000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Asegura que solo se abra el contenido del checkbox marcado */
+input[type="checkbox"]:checked+label+.content {
+    max-height: 150px;
+}
+
+.acordeon label:hover {
+    background-color: #e0e4d0;
+}
+
+.preguntas {
+    height: 500px;
+    width: 100%;
+    background-color: #dae4f4;
+    transition: height 0.5s ease, margin-top 0.5s ease;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.contenedor-preguntas {
+    margin-top: 100px;
+
+}
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                 ESTILOS INICIAR SESSION                                           */
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.fondo-textura {
+
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 100px;
+
+}
+
+.contenedor-form-iniciosession {
+    width: 700px;
+    height: 500px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-color: #dae4f4;
+    border-radius: 50px;
+    box-shadow: -5px 5px 22px -15px black;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+    min-width: 400px;
+
+}
+
+.footer-iniciarsession {
+    position: absolute;
+    bottom: -450px;
+}
+
+.body-iniciarsession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-iniciarsession {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-iniciarssesion {
+    font-family: 'Exo2';
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #e9dbe7;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fondo-imagen-mujer-iniciar-session {
+    opacity: 40%;
+    width: 800px;
+    height: 2000px;
+    margin-top: -2000px;
+    margin-left: -20px;
+    pointer-events: none;
+}
+
+.subrallado-iniciarsession {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: -150px;
+}
+
+.input-form-inicio-session1 {
+    border-color: #f0f4db;
+    border-radius: 25px;
+    background-color: #f0f4db;
+    display: flex;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+
+}
+
+#password {
+    background-color: #f0f4db;
+    height: 30px;
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.espacio-inicio-session {
+    height: 60px;
+    z-index: 1;
+    margin-top: -130px;
+}
+
+.h1-inisiar-session {
+    font-family: 'PoiretOne';
+    font-size: 40px;
+}
+
+#label-input-form-mail-inicio-session {
+    margin-left: -5px;
+    z-index: 1;
+
+}
+
+#botton-enviar-form-inicio-session {
+    margin-top: 50px;
+    font-family: 'Exo2';
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #e9dbe7;
+    border-width: 1px;
+    border-style: solid;
+    width: 150px;
+    height: 50px;
+    z-index: 5;
+    position: relative;
+}
+
+input::placeholder {
+    font-family: 'Exo2';
+    text-align: center;
+    z-index: 1;
+}
+
+.password-input {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 3px;
+    z-index: 1;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    margin-left: -35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    /* Ancho de la imagen del ojo */
+    height: 24px;
+    /* Altura de la imagen del ojo */
+    margin-top: 10px;
+
+}
+
+#password.error {
+    color: red;
+}
+
+body {
+    background-color: #1d1a39;
+}
+
+
+
+.password-label {
+    font-family: 'Exo2';
+    font-size: 16px;
+}
+
+#password::placeholder {
+    font-size: 25px;
+    font-family: 'Exo2';
+}
+
+#password[type="password"] {
+    font-size: 30px;
+    font-family: 'Exo2';
+}
+
+#password[type="text"] {
+    font-size: 16px;
+    font-family: 'Exo2';
+}
+
+#input-form-mail[type="text"] {
+    font-size: 16px;
+    font-family: 'Exo2';
+}
+
+
+
+
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                       ESTILOS REGISTRARTE                                         */
+/*---------------------------------------------------------------------------------------------------*/
+
+
+.fondo-textura2 {
+    width: 200%;
+    height: 200%;
+    opacity: 50%;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+#password1 {
+    background-color: #f0f4db;
+    height: 30px;
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+#password2 {
+    background-color: #f0f4db;
+    height: 30px;
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.char-limit-warning4 {
+    margin-top: 5px;
+    color: red;
+}
+
+.char-limit-warning3 {
+    margin-top: 5px;
+    color: red;
+}
+
+.char-limit-warning2 {
+    margin-top: 5px;
+    color: red;
+}
+
+.char-limit-warning {
+    margin-top: 5px;
+    color: red;
+}
+
+.passwordMismatchWarning {
+    margin-top: 15px;
+    color: red;
+}
+
+#password2.error {
+    color: red;
+}
+
+#password1.error {
+    color: red;
+}
+
+.subrallado-registrarte {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 220px;
+}
+
+.seccion-registrarte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor-registrarte {
+    width: 800px;
+    height: 800px;
+    border-radius: 50px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    box-shadow: -5px 5px 22px -10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fondo-imagen-mujer-iniciar-registrate {
+    width: 1000px;
+    height: 2800px;
+    margin-top: -3500px;
+    opacity: 30%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.contenedor-form-registrarte {
+    margin-top: -500px;
+    width: 800px;
+    height: 800px;
+    background-color: #dae4f4;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    z-index: 1;
+    
+}
+
+.form-izquierdo-registrate {
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.form-derecho-registrate {
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.input-form-registrate {
+    border-color: #f0f4db;
+    border-radius: 50px;
+    background-color: #f0f4db;
+    margin-bottom: 25px;
+    height: 30px;
+    width: 300px;
+    font-family: 'Exo2';
+    font-size: 16px;
+}
+
+
+#label-mail,
+#label-nacimiento,
+#label-apellido,
+#label-nombre,
+#label-genero {
+    font-size: 20px;
+}
+
+
+.contraseña {
+    font-size: 20px;
+}
+
+.repetir-contraseña {
+    font-size: 20px;
+}
+
+.espacio-registrate {
+    height: 25px;
+}
+
+.h1-registrate {
+    font-family: 'PoiretOne';
+    font-size: 40px;
+    padding: 1em;
+    margin-bottom: -180px;
+    z-index: 0;
+}
+
+#genero {
+    border-color: #f0f4db;
+    border-radius: 25px;
+    background-color: #f0f4db;
+    height: 35px;
+    width: 315px;
+    font-family: 'Exo2';
+    border-top: 2px solid #aaaaaa;
+    border-left: 2px solid #aaaaaa;
+}
+
+#botton-enviar-form-registrate {
+    font-family: 'Exo2';
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #e9dbe7;
+    border-width: 1px;
+    border-style: solid;
+    width: 150px;
+    height: 50px;
+    margin-top: 0;
+    margin-left: 320px;
+    z-index: 1;
+}
+
+.separador-registrarte {
+    height: 25px;
+}
+
+.separador-registrarte2 {
+    height: 5px;
+}
+
+@media (max-width:1500px)
+{
+
+.body-registrarte .fondo-textura2{
+    height: 150%;
+}
+.contenedor-registrarte{
+    min-width: 350px;
+    margin: 25px;
+    margin-top: 200px;
+}
+
+.contenedor-form-registrarte{
+    width: 550px;
+}
+
+.form-izquierdo-registrate{
+    min-width: 200px;
+    right: 0;
+}
+
+.input-form-registrate{
+    width: 150px;
+
+}
+}
+
+/****************************************************************************************************************/
+/****************************************************************************************************************/
+/****************************************************************************************************************/
+/*                                       ESTILOS TURNOS                                              */
+/*---------------------------------------------------------------------------------------------------*/
+.turnos {
+    height: 500px;
+}
+
+/*-----------------------------------------------------------*/
+
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                 ESTILOS OPINIONES                                                 */
+/*---------------------------------------------------------------------------------------------------*/
+.verificado {
+    position: absolute;
+    margin-left: 110px;
+}
+
+.no-verificado {
+    position: absolute;
+    width: 25%;
+    margin-left: 110px;
+}
+
+.titulo-de-opiniones h1 {
+    font-size: 55px;
+    font-family: 'PoiretOne';
+    font-weight: bold;
+}
+
+.titulo-de-opiniones p {
+    width: 400px;
+    height: 300px;
+    margin-top: 25px;
+}
+
+.titulo-de-opiniones {
+    width: 50%;
+    height: 50%;
+}
+
+.contenedor-imagen-opinion {
+    width: 50%;
+    margin-left: 400px;
+    margin-top: -350px;
+}
+
+.imagen-opinion {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
+
+.opiniones {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+label:hover {
+    background-color: transparent;
+}
+
+.input-texto-opiniones::-webkit-scrollbar {
+    width: 15px;
+}
+
+.input-texto-opiniones::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.input-texto-opiniones::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.contenedor-estrellas {
+    width: 300px;
+    height: 2em;
+    background-color: #dadaf4;
+    border-radius: 50px;
+    margin-top: 55px;
+    display: flex;
+    border-color: black;
+    border: 1px solid black;
+    font-size: calc(24px + (36 - 24) * (100vw - 320px) / (1280 - 320));
+}
+
+.input-texto-opiniones {
+    height: 200px;
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    padding: 20px;
+    resize: none;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+
+.input-texto-opiniones::placeholder {
+    margin-top: 10px;
+}
+
+#botton-enviar-form-opiniones {
+    margin-top: 25px;
+    font-family: 'Exo2';
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #e9dbe7;
+    border-width: 1px;
+    border-style: solid;
+    width: 150px;
+    height: 50px;
+    margin-left: 130px;
+
+}
+
+.contenedor-texto {
+    height: 300px;
+    width: 400px;
+    background-color: transparent;
+    margin-top: 25px;
+}
+
+.contenedor-opiniones {
+    background-color: #dae4f4;
+    display: flex;
+    font: 1em/1.5 sans-serif;
+    height: 500px;
+    width: 500px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.rating {
+    margin: auto;
+}
+
+.rating__stars {
+    display: flex;
+    position: relative;
+}
+
+.rating__star {
+    display: block;
+    overflow: visible;
+    pointer-events: none;
+    width: 1em;
+    height: 1em;
+}
+
+.rating__star-body,
+.rating__star-body-g,
+.rating__star-shadow {
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    animation-fill-mode: forwards;
+}
+
+.rating__star-body {
+    fill: var(--star-dim);
+    transform-origin: 16px 17.45px;
+    transition: fill 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.rating__star-body-g {
+    animation-name: starShrink;
+    transform: scale(0.67);
+    transform-origin: 16px 31px;
+}
+
+.rating__star-shadow {
+    animation-name: starShadowShrink;
+    fill: gray;
+    transform: scale(0.67);
+    transform-origin: 16px 31px;
+}
+
+.rating--pristine .rating__star-body,
+.rating--pristine .rating__star-body-g,
+.rating--pristine .rating__star-shadow {
+    animation-duration: 0s;
+}
+
+.rating__label,
+.rating__input {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.rating__label {
+    cursor: pointer;
+    padding: 0.1875em;
+}
+
+.rating__label--delay1 .rating__star-body,
+.rating__label--delay1 .rating__star-body-g {
+    animation-delay: 0.05s;
+}
+
+.rating__label--delay2 .rating__star-body,
+.rating__label--delay2 .rating__star-body-g {
+    animation-delay: 0.1s;
+}
+
+.rating__label--delay3 .rating__star-body,
+.rating__label--delay3 .rating__star-body-g {
+    animation-delay: 0.15s;
+}
+
+.rating__label--delay4 .rating__star-body,
+.rating__label--delay4 .rating__star-body-g {
+    animation-delay: 0.2s;
+}
+
+.rating__input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.rating__input-1:hover~.rating__label:first-of-type .rating__star-body,
+.rating__input-2:hover~.rating__label:nth-of-type(-n + 2) .rating__star-body,
+.rating__input-3:hover~.rating__label:nth-of-type(-n + 3) .rating__star-body,
+.rating__input-4:hover~.rating__label:nth-of-type(-n + 4) .rating__star-body,
+.rating__input-5:hover~.rating__label:nth-of-type(-n + 5) .rating__star-body {
+    fill: yellow;
+}
+
+.rating__input-1:checked~.rating__label:first-of-type .rating__star-body,
+.rating__input-2:checked~.rating__label:nth-of-type(-n + 2) .rating__star-body,
+.rating__input-3:checked~.rating__label:nth-of-type(-n + 3) .rating__star-body,
+.rating__input-4:checked~.rating__label:nth-of-type(-n + 4) .rating__star-body,
+.rating__input-5:checked~.rating__label:nth-of-type(-n + 5) .rating__star-body {
+    animation-name: starSpin;
+    fill: yellow;
+}
+
+.rating__input-1:checked~.rating__label:first-of-type .rating__star-body-g,
+.rating__input-2:checked~.rating__label:nth-of-type(-n + 2) .rating__star-body-g,
+.rating__input-3:checked~.rating__label:nth-of-type(-n + 3) .rating__star-body-g,
+.rating__input-4:checked~.rating__label:nth-of-type(-n + 4) .rating__star-body-g,
+.rating__input-5:checked~.rating__label:nth-of-type(-n + 5) .rating__star-body-g {
+    animation-name: starJump;
+}
+
+.rating__input-1:checked~.rating__label:first-of-type .rating__star-shadow,
+.rating__input-2:checked~.rating__label:nth-of-type(-n + 2) .rating__star-shadow,
+.rating__input-3:checked~.rating__label:nth-of-type(-n + 3) .rating__star-shadow,
+.rating__input-4:checked~.rating__label:nth-of-type(-n + 4) .rating__star-shadow,
+.rating__input-5:checked~.rating__label:nth-of-type(-n + 5) .rating__star-shadow {
+    animation-name: starShadow;
+}
+
+.rating__input-2:checked~.rating__label:nth-of-type(-n + 1):hover .rating__star-body,
+.rating__input-3:checked~.rating__label:nth-of-type(-n + 2):hover .rating__star-body,
+.rating__input-4:checked~.rating__label:nth-of-type(-n + 3):hover .rating__star-body,
+.rating__input-5:checked~.rating__label:nth-of-type(-n + 4):hover .rating__star-body {
+    fill: yellow;
+}
+
+.rating__sr {
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+@keyframes starJump {
+    from {
+        transform: translateY(0) scale(0.67, 0.67);
+    }
+
+    20% {
+        transform: translateY(0) scale(0.75, 0.5);
+    }
+
+    40% {
+        transform: translateY(-100%) scale(1.15, 1.15);
+    }
+
+    60% {
+        transform: translateY(0) scale(1.1, 0.6);
+    }
+
+    80% {
+        transform: translateY(0) scale(0.95, 1.1);
+    }
+
+    to {
+        transform: translateY(0) scale(1, 1);
+    }
+}
+
+@keyframes starShadow {
+    from {
+        transform: scale(0.67, 1);
+    }
+
+    20% {
+        transform: scale(0.75, 1);
+    }
+
+    40% {
+        transform: scale(1.15, 1);
+    }
+
+    60% {
+        transform: scale(1.1, 1);
+    }
+
+    80% {
+        transform: scale(0.95, 1);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes starShrink {
+    from {
+        animation-timing-function: ease-in;
+        transform: scale(1, 1);
+    }
+
+    20% {
+        animation-timing-function: ease-out;
+        transform: scale(0.6, 0.6);
+    }
+
+    40%,
+    to {
+        transform: scale(0.67, 0.67);
+    }
+}
+
+@keyframes starShadowShrink {
+    from {
+        animation-timing-function: ease-in;
+        transform: scale(1, 1);
+    }
+
+    20% {
+        animation-timing-function: ease-out;
+        transform: scale(0.6, 1);
+    }
+
+    40%,
+    to {
+        transform: scale(0.67, 1);
+    }
+}
+
+@keyframes starSpin {
+
+    from,
+    20% {
+        transform: rotate(0);
+    }
+
+    60%,
+    to {
+        transform: rotate(144deg);
+    }
+}
+
+
+
+@media (max-width: 1100px){
+
+    .contenedor-imagen-opinion{
+        display: none;
+    }
+
+    .titulo-de-opiniones h1 {
+        font-size: 35px;
+        font-family: 'PoiretOne';
+        font-weight: bold;
+        margin-left: 25px;
+    }
+
+    .titulo-de-opiniones p {
+        min-width: 50px;
+        min-height: 200px;
+        max-width: 200px;
+        max-height: 400px;
+        margin-top: 25px;
+        font-size: 10px;
+        margin-left: 25px;
+        overflow: hidden;
+        margin-right: 25px;
+    }
+
+    .contenedor-opiniones{
+        width: 300px;
+        overflow: hidden;
+        margin-right: 20px;
+        border-radius: 15px;
+    }
+
+    .contenedor-estrellas{
+        min-width: 200px;
+        max-width: 250px;
+    }
+
+    #botton-enviar-form-opiniones{
+        width: 100px;
+        margin-left: 150px;
+    }
+
+    .input-texto-opiniones{
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    .header-opiniones .barra-navegacion-medio{
+        margin-left: 250px;
+    }
+
+    .header-opiniones .barra-navegacion-rigth2{
+        margin-right: 350px;
+    }
+
+    .perfil{
+        display: none;
+    }
+
+    .header-opiniones{
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opiniones{
+    margin-top: 300px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .header-opiniones .barra-navegacion-medio{
+        margin-left: 400px;
+    }
+
+    .header-opiniones .barra-navegacion-medio .barra-navegacion-ul a{
+        font-size: 12px;
+    }
+
+
+    .barra-navegacion-medio .barra-navegacion-ul .header{
+        font-size: 15px;
+    }
+
+    .input-texto-opiniones{
+        width: 150px;
+        margin-left: 125px;
+        font-size: 10px;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .contenedor-estrellas{
+        min-width: 100px;
+        max-width: 150px;
+        margin-top: -50px;
+    }
+
+    .rating__label{
+        width: 25px;
+    }
+
+    .titulo-de-opiniones p {
+        min-width: 50px;
+        min-height: 200px;
+        max-width: 100px;
+        max-height: 400px;
+        margin-top: 25px;
+        font-size: 10px;
+        margin-left: 25px;
+        overflow: hidden;
+    }
+
+    .titulo-de-opiniones h1 {
+        font-size: 30px;
+        font-family: 'PoiretOne';
+        font-weight: bold;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: -50px;
+    }
+
+    #botton-enviar-form-opiniones{
+        margin-top: 10px;
+    }
+
+    .footer-izquierdo .whatsapp h4{
+        display: none;
+    }
+
+}
+
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*****************************************************************************************************/
+/*                                 ESTILOS MI PERFIL                                                 */
+/*---------------------------------------------------------------------------------------------------*/
+
+.perfil {
+    width: 7%;
+    margin-left: 15px;
+}
+
+.perfil-link {
+    margin-left: 350px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'PoiretOne';
+    font-weight: bold;
+    color: black;
+}
+
+.perfil-link:hover {
+    color: #3d4d96;
+    background-image: linear-gradient(to bottom, #3d4d96, #3d4d96);
+    background-repeat: no-repeat;
+    background-size: 50% 2px;
+    background-position: left bottom;
+    position: relative;
+}
+
+.contenedor-titulo {
+    border-radius: 50px;
+    background-color: #dae4f4;
+    margin-top: 150px;
+    width: 90%;
+    height: 50px;
+    margin-left: 65px;
+    font-family: 'Exo2';
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cerrar {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cerrar:hover {
+    color: #3d4d96;
+}
+
+.contenedor-titulo h1 {
+    margin-left: 25px;
+}
+
+.body-perfil {
+    height: 1300px;
+    background-color: #dadaf4;
+}
+
+.footer-perfil {
+    position: absolute;
+    bottom: -1300px;
+}
+
+.contenedor-datos-miperfil {
+    width: 80%;
+    height: 1300px;
+    background-color: #dae4f4;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    margin-left: 65px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-datos-miperfil h2 {
+    margin-top: 20px;
+    font-family: 'PoiretOne';
+    font-weight: bold;
+}
+
+.contenedor-grid-perfil {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.imagen-perfil {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+}
